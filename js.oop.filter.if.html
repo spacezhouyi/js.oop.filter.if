@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>js.filter.prototype</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+/*
+    　(function () {
+        "use strict";*/
+        var seed = [];
+        var staff = [
+            {
+                info: {
+                    first:"zhou",
+                    last:"yi",
+                    word:"3",
+                    rich:1531
+                },
+                age: 2
+            },
+            {
+                info: {
+                    first:"tian",
+                    last:"cai",
+                    word:"5",
+                    rich:132
+                },
+                age: 5
+            },
+            {
+                info: {
+                    first:"da",
+                    last:"shen",
+                    word:"11",
+                    rich:"231"
+                },
+                age:7
+            },
+            {
+                info: {
+                    first:"niu",
+                    last:"b",
+                    word:2,
+                    rich:"911"
+                },
+                age: 9
+            }
+        ].
+/*                map(function (item) {
+                    item.name.word=Number(item.name.word);
+                    return item;
+                });*/
+
+                filter(function (item) {
+                    item.info.word = Number(item.info.word);
+                    item.info.rich = Number(item.info.rich);
+                    item.info.eb = item.info.word*  item.info.rich;
+                    if(item.info.age <=6){
+                        seed.push(item);
+                        console.info(327);
+                    }
+                    return item;
+                });
+
+
+        var initialize = function () {
+            console.info(staff);
+            console.info(seed);
+        };
+
+        initialize();
+
+</script>
+
+<h1>
+    please key F12 see console.
+</h1>
+
+
+<br>
+object have 5 line.
+
+
+<br>
+access after filter object have 3 line.
+</html>
